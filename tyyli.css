@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+*,
+*::before,
+*::after{box-sizing:border-box;}
+
+html, body {
+    height: 100%;
+    font-size: 20px;
+    line-height: 1.625;
+    color: rgba(248, 246, 241, 0.87);
+}
+
+#aalto-taus {
+    background-image: url("media/tausta.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vare-taus {
+    background: linear-gradient(-45deg, #110e2496, #01011be1, #11101a70, #1f1e2e1a);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#koko-sivu {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.koko-levy{
+    width: 100%;
+    height: 3em;
+}
+
+.yla-levy {
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.87) 2%,rgba(0, 0, 0, 0.767) 20%, rgba(22, 22, 26, 0.00));
+    padding-top: 0.5em;
+}
+
+.ala-levy {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.767) 15%, rgba(22, 22, 26, 0.05));
+    padding-top: 1em;
+    position: fixed;
+    bottom: 0;
+}
+
+.koko-levy .vahan-keski {
+    max-width: 900px;
+    margin: auto;
+    color: rgb(245, 245, 245);
+}
+
+nav {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: #ffffff;
+}
+
+nav a{
+    font-size: 1.1em;
+}
+
+footer a, nav a {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#asiat {
+    max-width: 720px;
+    margin: auto;
+    list-style-type: none;
+    text-align: justify;
+}
+
+#asiat img {
+    width: 100%;
+    margin: auto;
+}
+
+#sisalto {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 20%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding-bottom: 0.2em;
+}
+
+p {
+    padding-bottom: 0.9em;
+}

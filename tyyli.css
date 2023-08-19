@@ -12,7 +12,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html, body {
     height: 100%;
-    font-size: 20px;
+    font-size: 17px;
+    font-family: "Georgia", "Times New Roman", "serif";
     line-height: 1.625;
     color: rgba(248, 246, 241, 0.87);
 }
@@ -87,8 +88,8 @@ nav a{
 }
 
 footer a, nav a {
-    padding-left: 2em;
-    padding-right: 2em;
+    width: 25%;
+    display: inline-block;
 }
 
 #asiat {

@@ -50,17 +50,19 @@ html, body {
 
 .koko-levy{
     width: 100%;
-    height: 3em;
 }
 
 .yla-levy {
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.87) 2%,rgba(0, 0, 0, 0.767) 20%, rgba(22, 22, 26, 0.00));
     padding-top: 0.5em;
+    padding-bottom: 1em;
+    height: 3em;
 }
 
 .ala-levy {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.767) 15%, rgba(22, 22, 26, 0.05));
     padding-top: 1em;
+    padding-bottom: 0.5em;
     position: fixed;
     bottom: 0;
 }
@@ -71,11 +73,7 @@ html, body {
     color: rgb(245, 245, 245);
 }
 
-nav {
-    text-align: center;
-}
-
-footer {
+nav, footer{
     text-align: center;
 }
 
@@ -88,8 +86,17 @@ nav a{
 }
 
 footer a, nav a {
-    width: 25%;
+    width: 30%;
     display: inline-block;
+    transition: transform .7s ease-in-out;
+}
+
+nav a:hover{
+    transform: scale(1.2);
+}
+
+footer a:hover {
+    transform: rotate(360deg);
 }
 
 #asiat {
@@ -127,4 +134,8 @@ h2 {
 
 p {
     padding-bottom: 0.9em;
+}
+
+footer a  {
+    font-size: 1.8em;
 }

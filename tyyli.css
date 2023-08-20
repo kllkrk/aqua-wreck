@@ -139,3 +139,15 @@ p {
 footer a  {
     font-size: 1.8em;
 }
+
+/*Levy-sivu*/
+.levy {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.levy .sarake {
+    width: 50%;
+    margin: 10px;
+    list-style-position: inside;
+    text-align: left;
+}

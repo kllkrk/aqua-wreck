@@ -8,6 +8,7 @@
         <meta name="description" content="Aqua-Wreck -bändin kotisivut">
         <meta name="keywords" content="Aqua-Wreck, bändi, keikat">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="responsiivinen_menu.js"></script> 
     </head>
     <body>
     <div id="aalto-taus">
@@ -15,15 +16,18 @@
     <div id="koko-sivu">
         <div class="koko-levy yla-levy">
             <div class="vahan-keski">
-                <nav>
-                    <a href="index.html">Etusivu</a>
-                    <a href="keikat.html">Keikat</a>
-                    <a href="julkaisut.html">Julkaisut</a>
-                </nav>
+                <div id="ylanavi" class="ylanavi">
+                    <a href="javascript:void(0);" class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i></a>
+                    <a href="index.html">ETUSIVU</a>
+                    <a href="bandi.html">BÄNDI</a>
+                    <a href="keikat.html">KEIKAT</a>
+                    <a href="julkaisut.html">JULKAISUT</a>
+                    <a href="kuvat.html">KUVAT & VIDEOT</a>
+                </div>
             </div>
         </div>
         <div id="asiat">
-            <img src="media/teksti.png">
+            <img src="media/teksti.png" id="aquaWreck-logo">
             <div id="sisalto">    
                 <h1>Julkaisut</h1>
                 <div class="levy-ja-sisalto">

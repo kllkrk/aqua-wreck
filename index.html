@@ -8,6 +8,7 @@
         <meta name="description" content="Aqua-Wreck -bändin kotisivut">
         <meta name="keywords" content="Aqua-Wreck, bändi, keikat">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="responsiivinen_menu.js"></script> 
     </head>
     <body>
     <div id="aalto-taus">
@@ -15,27 +16,22 @@
     <div id="koko-sivu">
         <div class="koko-levy yla-levy">
             <div class="vahan-keski">
-                <nav>
-                    <a href="index.html">Etusivu</a>
-                    <a href="keikat.html">Keikat</a>
-                    <a href="julkaisut.html">Julkaisut</a>
-                </nav>
+                <div id="ylanavi" class="ylanavi">
+                    <a href="javascript:void(0);" class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i></a>
+                    <a href="index.html">ETUSIVU</a>
+                    <a href="bandi.html">BÄNDI</a>
+                    <a href="keikat.html">KEIKAT</a>
+                    <a href="julkaisut.html">JULKAISUT</a>
+                    <a href="kuvat.html">KUVAT & VIDEOT</a>
+                </div>
             </div>
         </div>
         <div id="asiat">
-            <img src="media/teksti.png">
+            <img src="media/teksti.png" id="aquaWreck-logo">
             <div id="sisalto">
                 <img src="media/aqw.jpg">
-                <h1>Bändistä</h1>
-                <p>
-                Olemme viisihenkinen bändi, jonka instrumentaatioon kuuluvat perinteisten bändisoitinten lisäksi trumpetti ja saksofoni.
-                </p>
-                <p>
-                Aqua-Wreck ammentaa 70-luvun progen estetiikasta mutta ei jäljittele mitään aikakauden yhtyettä. Musiikissamme on vaikutteita hard rockista, R&B:ista, jazzista ja klassisesta musiikista. Monipuolinen dynamiikkamme vaihtelee balladeista raskaaseen riffittelyyn. Tärkeässä osassa ovat rikas harmoniamaailma ja kiinnostavat sovitukset. 
-                </p>
-                <p>
-                Keikkailukokemusta meiltä löytyy runsaasti. Olemme saaneet musiikillamme odottamattomia faneja ja kirvoittaneet yleisössä koko tunteiden spektrin. Aqua-Wreckin ohella jäsenemme ovat vaikuttaneet monissa muissa kokoonpanoissa, esimerkkeinä Mama Longhorn, Eleanoora Rosenholm ja Malady.
-                </p> 
+                <h1>Etusivu</h1>
+
             </div>
         </div>
         <div class="koko-levy ala-levy">

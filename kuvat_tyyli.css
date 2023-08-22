@@ -1,0 +1,42 @@
+/*Kuvat-sivulle*/
+
+.kuvasailion-sailio {
+    background-image: radial-gradient(#00000fe7, #00000fb9, #00000f38, #00000f00);
+}
+
+.kuvasailio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(300px, 95%, 3000px);
+    margin: auto
+}
+
+.kuvasailio p {
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.3em 100px;
+    margin-bottom: 2em;
+}
+
+.kuvarivi {
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+
+.kuvarivi img {
+    padding: 2px;
+    width: 33.33%;
+}
+
+@media only screen and (max-width: 768px) {
+    .kuvasailio {
+        flex: none;
+    }
+
+    .kuvarivi {
+        flex-direction: column;
+    }
+}

@@ -3,12 +3,15 @@
     <head>
         <title>Aqua-Wreck | Bändi</title>
         <link rel="stylesheet" href="tyyli.css">
+        <link rel="stylesheet" href="bandi_tyyli.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
         <meta name="description" content="Aqua-Wreck -bändin kotisivut">
         <meta name="keywords" content="Aqua-Wreck, bändi, keikat">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="responsiivinen_menu.js"></script> 
+        <script src="soittaja_menu.js"></script> 
+
     </head>
     <body>
     <div id="aalto-taus">
@@ -17,7 +20,7 @@
         <div class="koko-levy yla-levy">
             <div class="vahan-keski">
                 <div id="ylanavi" class="ylanavi">
-                    <a href="javascript:void(0);" class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i></a>
+                    <button class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i></button>
                     <a href="index.html">ETUSIVU</a>
                     <a href="bandi.html">BÄNDI</a>
                     <a href="keikat.html">KEIKAT</a>
@@ -39,6 +42,93 @@
                 <p>
                     Keikkailukokemusta meiltä löytyy runsaasti. Olemme saaneet musiikillamme odottamattomia faneja ja kirvoittaneet yleisössä koko tunteiden spektrin. Aqua-Wreckin ohella jäsenemme ovat vaikuttaneet monissa muissa kokoonpanoissa, esimerkkeinä Mama Longhorn, Eleanoora Rosenholm ja Malady.
                 </p> 
+
+                <br>
+                <h2>Tiivistelmä Aqua-Wreckin odysseiasta</h2>
+                <ul>
+                    <li>2010 Bändi perustetaan ensimmäisessä inkarnaatiossaan</li>
+                    <li>2012 Nykyinen jäsenistö kokoontuu ensikertaa</li>
+                    <li>2013 Katkerat hyvästit</li>
+                    <li>2019 Ylösnousemus</li>
+                    <li>2019 Nimen vettyminen</li>
+                    <li>2019 Half a Year -single</li>
+                    <li>2020 No Scene -single</li>
+                </ul>
+
+                <br>
+                <h2>Jäsenistö</h2>
+                <div class="jasenisto">
+                <div class="jasen-menu">
+                    <button class="soittajanappi" onclick="soittajaMenu('Totti')">Totti</button>
+                    <button class="soittajanappi" onclick="soittajaMenu('Taavi')">Taavi</button>
+                    <button class="soittajanappi" onclick="soittajaMenu('Lauripekka')">Lauripekka</button>
+                    <button class="soittajanappi" onclick="soittajaMenu('Kalle')">Kalle</button>
+                    <button class="soittajanappi" onclick="soittajaMenu('Tatu')">Tatu</button>
+                </div>
+                <div id="soittajat">
+                    <div id="Totti" class="soittaja">
+                        <div class="sarake"><img src="media/bandi/soittajaTotti.jpg"></div>
+                        <div class="sarake">
+                            <h3>Totti</h3>
+                            <ul>
+                                <li>Laulu</li>
+                                <li>Trumpetti</li>
+                                <li>Lyömäsoittimet</li>
+                            </ul>
+                            <p>Totti "TE Kaarle" Kaarle on yhtyeen pääsäveltäjä, laulaja extraordinaire & suurmestari.</p>
+                        </div>
+                    </div>
+
+                    <div id="Taavi" class="soittaja">
+                        <div class="sarake"><img src="media/bandi/soittajaTaavi.jpg"></div>
+                        <div class="sarake">
+                            <h3>Taavi</h3>
+                            <ul>
+                                <li>Saksofonit</li>
+                                <li>Klarinetti</li>
+                                <li>Koskettimet</li>
+                            </ul>
+                            <p>Taavi Heikkilä on bändin primus motor; nuoresta iästään huolimatta kapteeni niin henkisesti kuin fyysisestikin. Osa yhtyeen tuotannosta on Taavin käsialaa.</p>
+                        </div>
+                    </div>
+
+                    <div id="Lauripekka" class="soittaja">
+                        <div class="sarake"><img src="media/bandi/soittajaLauripekka.jpg"></div>
+                        <div class="sarake">
+                            <h3>Lauripekka</h3>
+                            <ul>
+                                <li>Kitara</li>
+                                <li>Huilu</li>
+                            </ul>
+                            <p>Lauripekka "Late" Muurinen on bändin imago. Hänet tunnetaan suuren intialaisen musiikin tuntemuksen ohella myös terävästä sanan säilästään.</p>
+                        </div>
+                    </div>
+
+                    <div id="Kalle" class="soittaja">
+                        <div class="sarake"><img src="media/bandi/soittajaKalle.jpg"></div>
+                        <div class="sarake">
+                            <h3>Kalle</h3>
+                            <ul>
+                                <li>Basso</li>
+                                <li>Tarvittaessa lyömäsoittimet</li>
+                            </ul>
+                            <p>Kalle "Kalu" Korkeamäki on yhtyeen toissijainen säveltäjä. Eräs hänen tuotantonsa tunnusomaisista piirteistä on niistä välittyvä viehtymys pieneen sekuntiin</p>
+                        </div>
+                    </div>
+
+                    <div id="Tatu" class="soittaja">
+                        <div class="sarake"><img src="media/bandi/soittajaTatu.jpg"></div>
+                        <div class="sarake">
+                            <h3>Tatu</h3>
+                            <ul>
+                                <li>Rummut</li>
+                                <li>Lyömäsoittimet</li>
+                            </ul>
+                            <p>Tatu Tyykilä, bändin perämies, pitää musiikin puhrin purjeissa ja aluksen kurssissaan kieroissakin tahtilajeissa ja viheliäisissä kappalerakenteissa luovien.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
         <div class="koko-levy ala-levy">

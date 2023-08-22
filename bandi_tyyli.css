@@ -1,0 +1,47 @@
+.jasenisto {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.jasen-menu {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.jasen-menu button {
+    max-width: max-content;
+    display: block;
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 1.1em;
+    padding: 0.5em 2vw 1em;
+    height: 3em;
+}
+
+.jasen-menu button:hover {
+    background-color: #cecef515;
+}
+
+.soittaja {
+    display: none;
+    flex-wrap: nowrap;
+}
+
+#Totti {
+    display: flex;
+}
+
+.soittaja .sarake {
+    width: 50%;
+    margin: 10px;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.sarake ul {
+    list-style-type: disc;
+}
+

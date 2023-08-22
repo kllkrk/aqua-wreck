@@ -12,7 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 *::after{box-sizing:border-box;}
 
 /*koko roskan setit*/
-html, body {
+html, body, button {
     height: 100%;
     font-size: 17px;
     font-family: "Georgia", "Times New Roman", "serif";
@@ -38,13 +38,13 @@ html, body {
 
 @keyframes gradient {
 	0% {
-		background-position: 0% 50%;
+		background-position: 20% 50%;
 	}
 	50% {
 		background-position: 100% 50%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 20% 50%;
 	}
 }
 /*koko sivun juttuja*/
@@ -101,7 +101,7 @@ footer a, .ylanavi a {
     transition: transform .7s ease-in-out;
 }
 
-.ylanavi a {
+.ylanavi a, button.ikoni {
     text-decoration: none;
     font-size: 1.1em;
     /*float: left;
@@ -124,13 +124,23 @@ footer a:hover {
 }
 
 /*navipalkin responsiivinen hampurilainen*/
-.ylanavi a.ikoni {
+.ylanavi button.ikoni {
     display: none;
+    border: none;
+    background: none;
+    color: #ffffff;
+    width: 100%;
 }
+
+
+button:hover{
+    cursor: pointer;
+}
+/*kun kapea laite*/
 
 @media screen and (max-width: 600px) {
     .ylanavi a {display: none;}
-    .ylanavi a.ikoni {
+    .ylanavi button.ikoni {
         display: block;
         float: none;
         margin: auto;
@@ -147,15 +157,17 @@ footer a:hover {
         right: 0;
         top: 0;
     }*/
-    .ylanavi.responsiivinen a {
+    .ylanavi.responsiivinen a, .ylanavi.responsiivinen button.ikoni {
         float: none;
         display: block;
         background-color: #01011be1;
         padding-bottom: 0.5em;
     }
 
-    .ylanavi.responsiivinen a:hover {
+    .ylanavi.responsiivinen a:hover,  .ylanavi.responsiivinen button:hover{
         transform: none;
+        background-color: #070752b4;
+        cursor: pointer;
     }
 }
 
@@ -182,7 +194,7 @@ footer a:hover {
     margin: auto;
     padding-left: 6px;
     padding-right: 6px;
-    width: clamp(300px, 80%, 900px);
+    width: clamp(350px, 80%, 900px); /*Onkohan 400px ok?*/
 }
 
 ul {
@@ -199,8 +211,15 @@ h1 {
 }
 
 h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-bottom: 0.3em;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.2em;
+    padding-bottom: 0.2em;
+    text-align: left;
 }
 
 p {
@@ -221,44 +240,4 @@ footer a  {
     margin: 10px;
     list-style-position: inside;
     text-align: left;
-}
-
-/*Kuvat-sivulle*/
-
-.kuvasailion-sailio {
-    background-image: radial-gradient(#00000fe7, #00000fb9, #00000f38, #00000f00);
-}
-
-.kuvasailio {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: clamp(300px, 95%, 3000px);
-    margin: auto
-}
-
-.kuvasailio p {
-    font-size: 14px;
-}
-
-.kuvarivi {
-    display: flex;
-    flex-direction: row;
-    width: 100%
-}
-
-.kuvarivi img {
-    padding: 2px;
-    width: 33.33%;
-}
-
-@media only screen and (max-width: 768px) {
-    .kuvasailio {
-        flex: none;
-    }
-
-    .kuvarivi {
-        flex-direction: column;
-    }
 }

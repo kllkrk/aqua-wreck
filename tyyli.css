@@ -194,7 +194,7 @@ button:hover{
     margin: auto;
     padding-left: 6px;
     padding-right: 6px;
-    width: clamp(350px, 80%, 900px); /*Onkohan 400px ok?*/
+    width: clamp(300px, 80%, 900px); /*Onkohan 400px ok?*/
 }
 
 ul {

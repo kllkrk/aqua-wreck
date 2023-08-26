@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*nollaus*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
     margin: 0;
@@ -9,15 +16,21 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 *,
 *::before,
-*::after{box-sizing:border-box;}
+*::after{-webkit-box-sizing:border-box;box-sizing:border-box;}
 
 /*koko roskan setit*/
 html, body, button {
     height: 100%;
-    font-size: 17px;
+    font-size: 16px;
     font-family: "Georgia", "Times New Roman", "serif";
     line-height: 1.625;
     color: rgba(248, 246, 241, 0.87);
+}
+
+@media screen and (max-width: 600px) {
+    html, body, button {
+        font-size: 15px;
+    }
 }
 
 /*taustakuva*/
@@ -27,16 +40,19 @@ html, body, button {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
+
 
 /*väreilyefekti*/
 #vare-taus {
+    background: -o-linear-gradient(135deg, #110e2496, #01011be1, #11101a7e, #1f1e2e4d);
     background: linear-gradient(-45deg, #110e2496, #01011be1, #11101a7e, #1f1e2e4d);
     background-size: 400% 400%;
-    animation: gradient 25s ease infinite;
+    -webkit-animation: aaltoilu 25s ease infinite;
+            animation: aaltoilu 25s ease infinite;
 }
-
-@keyframes gradient {
+@-webkit-keyframes aaltoilu {
 	0% {
 		background-position: 20% 50%;
 	}
@@ -47,6 +63,19 @@ html, body, button {
 		background-position: 20% 50%;
 	}
 }
+@keyframes aaltoilu {
+	0% {
+		background-position: 20% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 20% 50%;
+	}
+}
+
+
 /*koko sivun juttuja*/
 #koko-sivu {
     height: 100vh;
@@ -59,6 +88,8 @@ html, body, button {
 
 /*ylä- ja alaosan erityisjutut*/
 .yla-levy {
+    background-image: -webkit-gradient(linear,left top, left bottom,color-stop(2%, rgba(0, 0, 0, 0.87)),color-stop(20%, rgba(0, 0, 0, 0.767)), to(rgba(22, 22, 26, 0.00)));
+    background-image: -o-linear-gradient(top,rgba(0, 0, 0, 0.87) 2%,rgba(0, 0, 0, 0.767) 20%, rgba(22, 22, 26, 0.00));
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.87) 2%,rgba(0, 0, 0, 0.767) 20%, rgba(22, 22, 26, 0.00));
     padding-top: 0.5em;
     padding-bottom: 1em;
@@ -68,6 +99,8 @@ html, body, button {
 }
 
 .ala-levy {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(15%, rgba(0, 0, 0, 0.767)), to(rgba(22, 22, 26, 0.05)));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.767) 15%, rgba(22, 22, 26, 0.05));
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.767) 15%, rgba(22, 22, 26, 0.05));
     padding-top: 1em;
     padding-bottom: 0.5em;
@@ -89,8 +122,12 @@ html, body, button {
 }
 
 .ylanavi {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 a {
@@ -98,7 +135,11 @@ a {
 }
 
 footer a, .ylanavi a {
+    -webkit-transition: -webkit-transform .7s ease-in-out;
+    transition: -webkit-transform .7s ease-in-out;
+    -o-transition: transform .7s ease-in-out;
     transition: transform .7s ease-in-out;
+    transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
 }
 
 .ylanavi a, button.ikoni {
@@ -116,11 +157,15 @@ footer a {
 }
 
 .ylanavi a:hover{
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 footer a:hover {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
 }
 
 /*navipalkin responsiivinen hampurilainen*/
@@ -165,7 +210,9 @@ button:hover{
     }
 
     .ylanavi.responsiivinen a:hover,  .ylanavi.responsiivinen button:hover{
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
         background-color: #070752b4;
         cursor: pointer;
     }
@@ -180,9 +227,16 @@ button:hover{
 }
 
 .kaksi-palstaa {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     margin: auto
 }
@@ -202,6 +256,7 @@ button:hover{
 a:hover {
     opacity: 1;
 	-webkit-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 a:hover img {

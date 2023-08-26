@@ -9,16 +9,16 @@
         <meta name="keywords" content="Aqua-Wreck, bändi, keikat">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="responsiivinen_menu.js"></script> 
-        <script src="kaiva uutiset.js"></script> 
+        <script src="kaiva_uutiset.js"></script> 
     </head>
-    <body>
+    <body onload="tayta_uutiset();">
     <div id="aalto-taus">
     <div id="vare-taus">
     <div id="koko-sivu">
         <div class="koko-levy yla-levy">
             <div class="vahan-keski">
                 <div id="ylanavi" class="ylanavi">
-                    <button class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i></button>
+                    <button class="ikoni" onclick="ylaMenu()"><i class="fa fa-bars"></i> SIVUVALIKKO</button>
                     <a href="index.html">ETUSIVU</a>
                     <a href="bandi.html">BÄNDI</a>
                     <a href="keikat.html">KEIKAT</a>
@@ -37,11 +37,12 @@
                 <h2>Tulossa pian tai hyvin pian...</h2>
                 <div class="kaksi-palstaa">
                     <div class="palsta">
-                        <h3>Tulevat keikat</h3>
+                        <a href="keikat.html"><h3>Tulevat keikat</h3></a>
+                        <!--KEIKAT-->
                         <div id="tulevat-keikat"></div>
                     </div>
                     <div class="palsta">
-                        <h3>Tulevaa musiikkia</h3>
+                        <a href="julkaisut.html"><h3>Tulevaa musiikkia</h3></a>
                         <div id="tulevat-musiikit"></div>
                     </div>
                 </div>

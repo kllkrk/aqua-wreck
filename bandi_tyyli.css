@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .jasenisto {
     border: 1px solid rgba(255, 255, 255, 0.5);
     padding: 2px;
@@ -5,12 +12,18 @@
 }
 
 .jasen-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .jasen-menu button {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
     max-width: max-content;
     display: block;
     border: none;
@@ -27,11 +40,14 @@
 
 .soittaja {
     display: none;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 #Totti {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -44,5 +60,38 @@
 
 .sarake ul {
     list-style-type: disc;
+    margin-bottom: 1.5em;
 }
 
+@media screen and (max-width: 600px) {
+    .jasenisto {
+        border: 0;
+    }
+
+    .jasen-menu {
+        display: none;
+    }
+
+    .soittaja {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border: 2px solid rgba(255, 255, 255, 0.05);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 5px;
+    }
+
+    .soittaja .sarake {
+        width: calc(100% - 10px);
+        margin: 5px;
+        list-style-position: inside;
+        text-align: justify;
+    }
+
+    .soittaja .sarake p {
+        width: 100%;
+    }
+}

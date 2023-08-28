@@ -129,7 +129,7 @@ html, body, button {
 }
 
 .koko-levy .vahan-keski {
-    width: clamp(580px, 95%, 1000px);
+    width: clamp(300px, 95%, 1000px);
     margin: auto;
     color: rgb(245, 245, 245);
     overflow: hidden;
@@ -210,6 +210,7 @@ button:hover{
         display: block;
         float: none;
         margin: auto;
+        font-size: 1.2em;
     }
 }
   
@@ -311,6 +312,10 @@ ul {
     text-align: left;
 }
 
+li {
+    padding-bottom: 0.2em;
+}
+
 h1, h2, h3 {
     font-weight: bold;
 }
@@ -341,4 +346,22 @@ p {
 
 footer a  {
     font-size: 1.8em;
+}
+
+.levy:hover{
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.8)));
+    background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+}
+
+.info {
+    vertical-align: super;
+    border: 1px solid #ffff00;
+    font-size: 0.6em;
+    padding: 0 1px;
+    margin-left: 0.5vw;
+}
+
+.info a {
+    color: #ffff00;
 }

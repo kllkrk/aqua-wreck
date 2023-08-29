@@ -172,9 +172,17 @@ footer a, .ylanavi a {
     padding-right: 7px;
 }
 
-footer a {
-    display: inline-block;
-    width: 30%;
+#jalustan-somet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+#jalustan-somet {
+    margin: 0 10%;
 }
 
 .ylanavi a:hover{
@@ -183,7 +191,12 @@ footer a {
             transform: scale(1.05);
 }
 
-footer a:hover {
+#jalustan-somet a {
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+#jalustan-somet a:hover {
     -webkit-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -219,11 +232,7 @@ button:hover{
         display: block;
         position: relative;
     }
-    /*.ylanavi.responsiivinen .i.ikoni {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }*/
+
     .ylanavi.responsiivinen a, .ylanavi.responsiivinen button.ikoni {
         float: none;
         display: block;

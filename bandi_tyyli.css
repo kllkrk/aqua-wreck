@@ -23,15 +23,12 @@
 
 .jasen-menu button {
     font-weight: bold;
-    max-width: -webkit-max-content;
-    max-width: -moz-max-content;
-    max-width: max-content;
     display: block;
     border: none;
     background: none;
     color: #ffffff;
     font-size: 1.1em;
-    padding: 0.5em 2vw 1em;
+    padding: 0.5em 3vw 1em;
     height: 3em;
 }
 

@@ -12,7 +12,7 @@ class Keikka {
     }
 
     tiedot() {
-        return this.pvm.toLocaleDateString("fi-FI") + " "+ this.paikka +  " " + this.paikkakunta;
+        return this.pvm.toLocaleDateString("fi-FI") + " "+ this.paikka +  ", " + this.paikkakunta;
     }
 }
 

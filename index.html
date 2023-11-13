@@ -8,10 +8,10 @@
         <meta name="description" content="Aqua-Wreck -bändin kotisivut">
         <meta name="keywords" content="Aqua-Wreck, bändi, keikat">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="responsiivinen_menu.js"></script> 
-        <script src="kaiva_uutiset.js"></script> 
+        <script src="responsiivinen_menu.js"></script>
+        <script src="keikat.js"></script>
     </head>
-    <body>
+    <body onload="kirjoitaKeikat()">
     <div id="aalto-taus">
     <div id="vare-taus">
     <div id="koko-sivu">
@@ -40,7 +40,9 @@
                     <div class="palsta">
                         <a href="keikat.html"><h3>Tulevat keikat</h3></a>
                         <!--KEIKAT-->
-                        <div id="tulevat-keikat"></div>
+                        <div id="tulevat-keikat">
+                            <ul></ul>
+                        </div>
                     </div>
                     <div class="palsta">
                         <a href="julkaisut.html"><h3>Tulevaa ja mennyttä musiikkia</h3></a>

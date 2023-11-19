@@ -12,6 +12,7 @@
     background-image: radial-gradient(#00000fe7, #00000fb9, #00000f38, #00000f00);
 }
 
+/*max-leveys 3600px koska 3*1200px */
 .kuvasailio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,7 +27,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: clamp(300px, 95%, 2400px);
+    width: clamp(300px, 89%, 3000px);
     margin: auto
 }
 
@@ -45,12 +46,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%
+    width: 100%;
+    max-width: 3000px;
 }
 
 .kuvarivi img {
     padding: 2px;
-    width: 33.33%;
 }
 
 @media only screen and (max-width: 768px) {

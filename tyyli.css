@@ -129,7 +129,7 @@ html, body, button {
 }
 
 .koko-levy .vahan-keski {
-    width: clamp(300px, 95%, 1000px);
+    width: clamp(300px, 98%, 1000px);
     margin: auto;
     color: rgb(245, 245, 245);
     overflow: hidden;
@@ -170,6 +170,16 @@ footer a, .ylanavi a {
     display: block;*/
     padding-left: 7px;
     padding-right: 7px;
+}
+
+/*- - - - KIELET - - - - -*/
+#kielet, #kielet a{
+    font-size: 0.89em;
+    display: none;
+}
+
+#kielet {
+    padding-left: 1.5%;
 }
 
 #jalustan-somet {
@@ -215,29 +225,37 @@ footer a, .ylanavi a {
 button:hover{
     cursor: pointer;
 }
-/*kun kapea laite*/
 
+/*kun kapea laite*/
 @media screen and (max-width: 600px) {
-    .ylanavi a {display: none;}
+    .ylanavi a, .ylanavi span {
+        display: none;
+    }
+
     .ylanavi button.ikoni {
         display: block;
         float: none;
         margin: auto;
         font-size: 1.2em;
     }
-}
-  
-@media screen and (max-width: 600px) {
+
     .ylanavi.responsiivinen {
         display: block;
         position: relative;
+        background-color: #01011be1;
     }
 
-    .ylanavi.responsiivinen a, .ylanavi.responsiivinen button.ikoni {
+    .ylanavi.responsiivinen a, .ylanavi.responsiivinen button.ikoni, .ylanavi.responsiivinen span {
         float: none;
         display: block;
-        background-color: #01011be1;
-        padding-bottom: 0.5em;
+        padding-bottom: 0.4em;
+        padding-top: 0.1em;
+    }
+
+    .ylanavi.responsiivinen span a {
+        display: inline;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
     .ylanavi.responsiivinen a:hover,  .ylanavi.responsiivinen button:hover{
@@ -374,3 +392,18 @@ footer a  {
 .info a {
     color: #ffff00;
 }
+
+
+
+/*Levy-sivu
+.levy {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.levy .sarake {
+    width: 50%;
+    margin: 10px;
+    list-style-position: inside;
+    text-align: left;
+}
+*/

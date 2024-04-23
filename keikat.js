@@ -20,6 +20,7 @@ var keikkalista = [];
 
 /*Vuosi, kk, päivä, paikka, kaupunki, linkki*/
 keikkalista.push(new Keikka(2024, 5, 4, "Terassi Pub Yläkerta", "Tampere", "https://fb.me/e/4zUdAcVil"));
+keikkalista.push(new Keikka(2024, 5, 4, "Pethaus", "Tampere", "https://fb.me/e/3GwJZR7WD"));
 keikkalista.push(new Keikka(2024, 5, 2, "Bar Loose", "Helsinki", "https://fb.me/e/6Y4NUrlF5"));
 keikkalista.push(new Keikka(2024, 2, 10, "Kulttuurikeskus Maanalainen", "Tampere", "https://fb.me/e/6GIYTTZaf"));
 keikkalista.push(new Keikka(2023, 12, 16, "Kulttuurikuppila Brummi", "Rauma", "https://fb.me/e/1peMiL0Hn"));

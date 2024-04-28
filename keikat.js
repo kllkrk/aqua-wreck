@@ -19,6 +19,7 @@ class Keikka {
 var keikkalista = [];
 
 /*Vuosi, kk, päivä, paikka, kaupunki, linkki*/
+keikkalista.push(new Keikka(2024, 7, 13, "PUSKA 2024", "Helsinki", "https://fb.me/e/1j7pPPiUp"));
 keikkalista.push(new Keikka(2024, 5, 4, "Terassi Pub Yläkerta", "Tampere", "https://fb.me/e/4zUdAcVil"));
 keikkalista.push(new Keikka(2024, 5, 4, "Pethaus", "Tampere", "https://fb.me/e/3GwJZR7WD"));
 keikkalista.push(new Keikka(2024, 5, 2, "Bar Loose", "Helsinki", "https://fb.me/e/6Y4NUrlF5"));

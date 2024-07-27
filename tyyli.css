@@ -291,6 +291,13 @@ button:hover{
 }
 
 .palsta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 10px;
     width: 50%;
     list-style-position: inside;
@@ -329,9 +336,9 @@ a img {
 
 #sisalto {
     margin: auto;
-    padding-left: 6px;
-    padding-right: 6px;
-    width: clamp(300px, 80%, 900px); /*Onkohan 400px ok?*/
+    padding-left: 4px;
+    padding-right: 4px;
+    width: clamp(350px, 80%, 900px); /*Onkohan 400px ok?*/
 }
 
 ul {
@@ -376,9 +383,13 @@ footer a  {
 }
 
 .levy:hover{
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.8)));
-    background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.062)), to(rgba(255, 255, 255, 0.705)));
+    background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.705));
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.062), rgba(255, 255, 255, 0.705));
+}
+
+.levy:hover .kuuntelulinkit {
+    background-color: #1f1e2e4d;
 }
 
 .info {
@@ -393,7 +404,32 @@ footer a  {
     color: #ffff00;
 }
 
+/*Äänitteiden kuuntelut*/
+.kuuntelulinkit {
+    margin-top: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0.5em;
+    font-size: 0.7em;
+}
 
+.kuuntelulinkit a {
+    -webkit-transition: -webkit-transform .7s ease-in-out;
+    transition: -webkit-transform .7s ease-in-out;
+    -o-transition: transform .7s ease-in-out;
+    transition: transform .7s ease-in-out;
+    transition: transform .7s ease-in-out, -webkit-transform .7s ease-in-out;
+}
+
+.kuuntelulinkit a:hover{
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15);
+}
 
 /*Levy-sivu
 .levy {
@@ -407,3 +443,13 @@ footer a  {
     text-align: left;
 }
 */
+
+iframe {
+    display: block;
+    margin: auto;
+    width: clamp(370px, 80%, 950px);
+    height: 41.5vw;
+    max-height: 534.375px;
+    min-height: 208.125px;
+    padding-bottom: 10px;
+}

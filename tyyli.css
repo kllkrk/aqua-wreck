@@ -447,7 +447,7 @@ footer a  {
 iframe {
     display: block;
     margin: auto;
-    width: clamp(370px, 80%, 950px);
+    width: clamp(350px, 80%, 950px);
     height: 41.5vw;
     max-height: 534.375px;
     min-height: 208.125px;

@@ -338,7 +338,7 @@ a img {
     margin: auto;
     padding-left: 4px;
     padding-right: 4px;
-    width: clamp(350px, 80%, 900px); /*Onkohan 400px ok?*/
+    width: clamp(320px, 80%, 900px); /*Onkohan 400px ok?*/
 }
 
 ul {
@@ -447,7 +447,7 @@ footer a  {
 iframe {
     display: block;
     margin: auto;
-    width: clamp(350px, 80%, 950px);
+    width: clamp(330px, 80%, 950px);
     height: 41.5vw;
     max-height: 534.375px;
     min-height: 208.125px;

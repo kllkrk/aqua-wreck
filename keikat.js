@@ -20,6 +20,7 @@ var keikkalista = [];
 
 /*Vuosi, kk, päivä, paikka, kaupunki, linkki*/
 keikkalista.push(new Keikka(2024, 10, 4, "Kulttuurikuppila Brummi", "Rauma", "https://www.facebook.com/share/yth3dDAnwMtuYmaw/"));
+keikkalista.push(new Keikka(2024, 9, 4, "Playhouse Bar ", "Helsinki", "https://fb.me/e/2iLBOkkTh"));
 keikkalista.push(new Keikka(2024, 7, 31, "Lepakkomies", "Helsinki", "https://www.facebook.com/share/9LPR95WP8z2Tab3Y/"));
 keikkalista.push(new Keikka(2024, 7, 13, "PUSKA 2024", "Helsinki", "https://fb.me/e/1j7pPPiUp"));
 keikkalista.push(new Keikka(2024, 7, 12, "PUNOS FEST", "Pori", "https://www.facebook.com/events/1114985956232835/"));

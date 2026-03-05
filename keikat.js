@@ -20,12 +20,13 @@ var keikkalista = [];
 
 /*Vuosi, kk, päivä, paikka, kaupunki, linkki*/
 keikkalista.push(new Keikka(2026, 4, 24, "Love Potion Psych fest", "Helsinki", "https://fb.me/e/6jgYJCnxG"));
+keikkalista.push(new Keikka(2026, 4, 4, "Hard Rock House", "Helsinki", "https://fb.me/e/6Hmi4QAI9"));
 keikkalista.push(new Keikka(2026, 3, 8, "RockNeck", "Jyväskylä", "https://fb.me/e/4RZkreCNo"));
 keikkalista.push(new Keikka(2026, 2, 26, "Kulttuurikeskus Maanalainen", "Tampere", "https://fb.me/e/6sgxhhseV"));
 keikkalista.push(new Keikka(2025, 10, 16, "Nirvana", "Turku", "https://fb.me/e/3MBBlDTt9"));
 keikkalista.push(new Keikka(2025, 8, 8, "Bar Kotelo", "Tampere", "https://fb.me/e/5Km9Hv9Qq"));
 keikkalista.push(new Keikka(2024, 10, 4, "Kulttuurikuppila Brummi", "Rauma", "https://www.facebook.com/share/yth3dDAnwMtuYmaw/"));
-keikkalista.push(new Keikka(2024, 9, 4, "Playhouse Bar ", "Helsinki", "https://fb.me/e/2iLBOkkTh"));
+keikkalista.push(new Keikka(2024, 9, 4, "Playhouse Bar", "Helsinki", "https://fb.me/e/2iLBOkkTh"));
 keikkalista.push(new Keikka(2024, 7, 31, "Lepakkomies", "Helsinki", "https://www.facebook.com/share/9LPR95WP8z2Tab3Y/"));
 keikkalista.push(new Keikka(2024, 7, 13, "PUSKA 2024", "Helsinki", "https://fb.me/e/1j7pPPiUp"));
 keikkalista.push(new Keikka(2024, 7, 12, "PUNOS FEST", "Pori", "https://www.facebook.com/events/1114985956232835/"));

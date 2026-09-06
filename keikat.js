@@ -67,6 +67,13 @@ function kirjoitaKeikat() {
                 node.appendChild(y);
             }
         }
+        else {
+            const node = document.createElement("li");
+            const textnode = document.createTextNode("TBA");
+            node.appendChild(textnode);
+            x.appendChild(node);
+            break;
+        }
     }
     keikkalista.reverse();
     try {
